@@ -1,0 +1,117 @@
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>My Space</title><link href="model2.css" rel="stylesheet">
+<script type="text/javascript">
+    var checkRegisterForm = function () { 
+    var name= document.getElementById('username').value;
+    var psd= document.getElementById('password').value;
+    var error = document.getElementById('test-error');
+    var Name=/^[0-9a-zA-Z]{3,10}$/;
+    var error = document.getElementById('test-error');
+    if(!Name.test(name)){
+     error.innerText = '用户名必须是3-10位英文字母或数字!';
+     return false;
+}
+    if(psd.length<=8){error.innerText = '您的密码过短不利于账号安全'
+    return false;
+}
+    if(psd.length>=15){error.innerText = '您的密码过长不方便记忆'
+    return false;
+}
+    return true;
+}
+  
+ </script>
+</head>
+<body onload="startTime()">
+<h1 class=wh><b>I  &nbsp&nbsp&nbspLOVE  &nbsp&nbsp&nbspDESIGN</h1>
+<p class=text>I'm glad that you visited my site where he can get to konw<br>me and my hobby.</p>
+<div class="hobby">
+    <div class="img">
+      <a target="_blank" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538537179999&di=ef3743a0f0c404df7fb4b8ebbc952099&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F17%2F02%2F10%2Ffabd746492b2d8fc5f51771d3770186a.jpg">
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538537179999&di=ef3743a0f0c404df7fb4b8ebbc952099&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F17%2F02%2F10%2Ffabd746492b2d8fc5f51771d3770186a.jpg"   alt="bobby" width="300" height="200">
+      </a>
+      <div class="desc">bilibili</div><a target="_blank" href="https://www.bilibili.com/">
+        <form action=""><input type="button" value="click here to arrive">
+        </form></a>
+    </div>
+  </div>
+   
+  <div class="hobby">
+    <div class="img">
+      <a target="_blank" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538537483044&di=da8f9f6b47efce0eca14904793c28873&imgtype=0&src=http%3A%2F%2Fimages6.fanpop.com%2Fimage%2Fphotos%2F40400000%2FSteam-steam-40455315-1920-1080.jpg">
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538537483044&di=da8f9f6b47efce0eca14904793c28873&imgtype=0&src=http%3A%2F%2Fimages6.fanpop.com%2Fimage%2Fphotos%2F40400000%2FSteam-steam-40455315-1920-1080.jpg" alt="hobby" width="300" height="200">
+      </a>
+      <div class="desc">steam</div><a target="_blank" href="https://store.steampowered.com/">
+        <form action=""><input type="button" value="click here to arrive">
+        </form></a>
+    </div>
+  </div>
+   
+  <div class="hobby">
+    <div class="img">
+      <a target="_blank" href="https://thumbs.dreamstime.com/z/%E7%BE%BD%E6%AF%9B%E7%90%83%E5%B0%8F%E9%B8%9F%E5%9B%BE%E7%94%BB%E7%90%83%E6%8B%8D-22416970.jpg">
+        <img src="https://thumbs.dreamstime.com/z/%E7%BE%BD%E6%AF%9B%E7%90%83%E5%B0%8F%E9%B8%9F%E5%9B%BE%E7%94%BB%E7%90%83%E6%8B%8D-22416970.jpgg" alt="hobby" width="300" height="300">
+      </a>
+      <div class="desc">badminton</div><a target="_blank" href="http://www.cba.org.cn//">
+        <form action=""><input type="button" value="click here to arrive">
+        </form></a>
+    </div>
+  </div>
+   
+  <div class="hobby">
+    <div class="img">
+      <a target="_blank" href="http://img.alicdn.com/bao/uploaded/i3/TB16TqsNVXXXXbTXpXXXXXXXXXX_!!0-item_pic.jpg">
+        <img src="http://img.alicdn.com/bao/uploaded/i3/TB16TqsNVXXXXbTXpXXXXXXXXXX_!!0-item_pic.jpg" alt="hobby" width="300" height="300">
+      </a>
+      <div class="desc">math ？？？</div><a target="_blank" href="http://tieba.baidu.com/f?kw=%B8%DF%B5%C8%CA%FD%D1%A7&fr=ala0&tpl=5">
+        <form action=""><input type="button" value="click here to arrive">
+        </form></a>
+    </div>
+  </div>
+<h1 class=wh>This is me<br>Do you know me ?</h1>
+<form id="test-register" action="#"  onsubmit="return checkRegisterForm()" style="color:white">
+  <p id="test-error" style="color:red"></p>
+  <p>
+      用户名: <input type="text" id="username" name="username" >
+  </p>
+  <p>
+      密码: <input type="password" id="password" name="password" >
+  </p>
+  <p>
+    <button type="submit "class="button">提交</button> <button type="reset">重置</button>
+</p>
+  </form>
+  <button class="button" onclick="demo()">change</button>
+ 
+    <script>
+    function demo(){
+      document.getElementByTagName("body").style.background="blue";
+      document.getElementByTagName("div").style.color="red";
+    }
+    </script>
+    <script>
+    function startTime(){
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById("timetxt").innerHTML = h+":"+m+":"+s;
+      t = setTimeout(function(){
+        startTime();
+      },1000);
+    }
+    function checkTime(i){
+      if(i<10){
+        i = "0"+i;
+      }
+      return i;
+    }
+    </script>
+    <div id="timetxt" style="color:white" ></div>
+
+</body>
+</html>
